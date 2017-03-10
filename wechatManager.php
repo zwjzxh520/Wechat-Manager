@@ -22,7 +22,7 @@ include(WECHAT_MANAGER_PLUGIN_DIR.'/wechat-manager-user.php');
 include(WECHAT_MANAGER_PLUGIN_DIR.'/wechat-manager-option.php');
 
 define("TOKEN",wm_get_setting('token'));  //TOKEN值
-define("POSTNUM",wm_get_setting('post_num'));  //TOKEN值
+define("POSTNUM",max(wm_get_setting('post_num') ? wm_get_setting('post_num') : 6, 8));  //TOKEN值
 $wm_thumb = wm_get_setting('thumb');
 $wm_bdak = wm_get_setting('bd_key');
 $wm_translate_appid = wm_get_setting('trans_appid');

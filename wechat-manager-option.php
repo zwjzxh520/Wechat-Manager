@@ -82,7 +82,7 @@ function wechat_manager_optionpage(){
                             <th>文章返回最大数</th>
                             <td>
                                 <input id="post_num" class="regular-text" type="text" name="wm_options[post_num]" value="<?php echo esc_attr( $options['post_num'] ); ?>" placeholder="6"/>
-                                <p class="description">返回文章个数(最多为 10 个)</p>
+                                <p class="description">返回文章个数(最多为 8 个)</p>
                             </td>
                         </tr>
                         <tr>
